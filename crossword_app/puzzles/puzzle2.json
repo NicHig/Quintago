@@ -1,0 +1,38 @@
+{
+  "schema_version": "puzzlefile.v1",
+  "meta": {
+    "id": "Puzzle_02",
+    "title": "",
+    "subtitle": "",
+    "author": "Nicholas",
+    "date": "2026-02-25",
+    "difficulty": "easy"
+  },
+  "entries": {
+    "h1": {
+      "clue": "Couples, in the city of love",
+      "initial": "PARIS",
+      "answer": "PAIRS"
+    },
+    "h2": {
+      "clue": "Flower of faith and love, given with, drops of joy or sadness",
+      "initial": "TEARS",
+      "answer": "ASTER"
+    },
+    "v1": {
+      "clue": "A spanish dance, in spanish rooms",
+      "initial": "SALAS",
+      "answer": "SALSA"
+    },
+    "v2": {
+      "clue": "An arrow's path, or a description of its speed as it left the bow",
+      "initial": "RACED",
+      "answer": "ARCED"
+    },
+    "hw": {
+      "clue": "Divinity, of war, to burn and scorch",
+      "initial": "SEAR",
+      "answer": "ARES"
+    }
+  }
+}

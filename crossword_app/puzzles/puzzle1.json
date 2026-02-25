@@ -1,0 +1,38 @@
+{
+  "schema_version": "puzzlefile.v1",
+  "meta": {
+    "id": "Puzzle_01",
+    "title": "",
+    "subtitle": "",
+    "author": "Nicholas",
+    "date": "2026-02-25",
+    "difficulty": "easy"
+  },
+  "entries": {
+    "h1": {
+      "clue": "employs, a method of quick, persuasive oration",
+      "initial": ".....",
+      "answer": "SPIEL"
+    },
+    "h2": {
+      "clue": "Anticipate with fear and apprehension, a serpent",
+      "initial": ".....",
+      "answer": "DREAD"
+    },
+    "v1": {
+      "clue": "Extra, weapon for Achilles",
+      "initial": ".....",
+      "answer": "SPARE"
+    },
+    "v2": {
+      "clue": "Angry stare, like a monarch or noble",
+      "initial": ".....",
+      "answer": "REGAL"
+    },
+    "hw": {
+      "clue": "To cut, an autumn fruit",
+      "initial": "....",
+      "answer": "PEAR"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+:root{
+  --outer-border-px: 3px;
+  --inner-border-px: 1px;
+  --outer-border-color: #222;
+  --inner-border-color: #666;
+  --cell-size: 56px;   /* JS will override responsively */
+  --black: #000;
+  --white: #fff;
+  --active-slot: #DCEBFF;
+  --given-fill: #F2F2F2;
+  --ok-fill: #DFF6DD;
+  --bad-fill: #F8D7DA;
+  --bad-text: #7A1C1C;
+  --active-outline-px: 3px;
+}
+
+html, body{
+  margin:0;
+  padding:0;
+  background: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+}
+
+#root{
+  outline: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  /* Keep padding minimal so the grid border hugs the playing area */
+  padding: 0;
+  user-select: none;
+}
+
+.grid{
+  display: grid;
+  /* grid-template-* is set by JS so it works for any N */
+  border: var(--outer-border-px) solid var(--outer-border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  background: transparent;
+  margin: 0; /* avoid centering "dead space" in wide columns */
+}
+
+.cell{
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  border-right: var(--inner-border-px) solid var(--inner-border-color);
+  border-bottom: var(--inner-border-px) solid var(--inner-border-color);
+  box-sizing: border-box;
+}
+
+.cell.last-col{
+  border-right: none;
+}
+
+.cell.last-row{
+  border-bottom: none;
+}
+
+.cell.black{
+  background: var(--black);
+}
+
+.cell.playable{
+  background: var(--white);
+  cursor: pointer;
+}
+
+.cell.playable.active-slot{
+  background: var(--active-slot);
+}
+
+.cell.playable.given{
+  background: var(--given-fill);
+}
+
+.cell.playable.check-ok{
+  background: var(--ok-fill);
+}
+
+.cell.playable.check-bad{
+  background: var(--bad-fill);
+  color: var(--bad-text);
+}
+
+.cell.playable.active-cell::after{
+  content:"";
+  position:absolute;
+  inset: 3px;
+  border: var(--active-outline-px) solid rgba(0,0,0,0.75);
+  border-radius: 8px;
+  pointer-events:none;
+}
+
+.hint{
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.75;
+}
